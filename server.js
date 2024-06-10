@@ -5,7 +5,7 @@ import pingServer from './ping.js';
 const app = express();
 
 // Schedule the ping to run every 15 minutes
-cron.schedule('*/5 * * * *', () => {
+cron.schedule('*/1 * * * *', () => {
   console.log('Pinging server...');
   pingServer();
 });
